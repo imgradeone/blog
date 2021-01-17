@@ -1,0 +1,401 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>imgradeone&#39;s blog</title>
+<link rel="shortcut icon" href="https://blog.imgradeone.com/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css">
+<link rel="stylesheet" href="https://blog.imgradeone.com/media/css/tailwind.css">
+<link rel="stylesheet" href="https://blog.imgradeone.com/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="imgradeone&#39;s blog - Atom Feed" href="https://blog.imgradeone.com/atom.xml">
+
+    
+
+  <meta name="description" content="从简从新的“小白”选手" />
+</head>
+<body>
+  <div class="antialiased flex flex-col min-h-screen" id="app">
+
+    <div class="nav py-3 md:py-8 fixed w-full z-10 bg-gray-50 dark:bg-gray-700 transition-all duration-300" :class="{ 'scroll': scrolled }">
+  <div class="flex justify-end px-4">
+    <div class="w-8 h-8 flex justify-center items-center rounded-full md:hidden" @click="showMenu = !showMenu">
+      <i class="ri-close-line" v-show="showMenu"></i>
+      <i class="ri-menu-3-line" v-show="!showMenu"></i>
+    </div>
+  </div>
+  <nav class="max-w-4xl w-full mx-auto text-center flex flex-col md:flex-row justify-center md:block" :class="`${ showMenu ? 'block' : 'hidden' }`">
+    
+      <a href="/" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        首页
+      </a>
+    
+      <a href="/archives" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        归档
+      </a>
+    
+      <a href="/tags" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        标签
+      </a>
+    
+      <a href="/post/about" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        关于
+      </a>
+    
+      <a href="/post/link" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        友情链接
+      </a>
+    
+      <a href="/post/donate" target="" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+        赞助
+      </a>
+    
+    <a href="https://blog.imgradeone.com/atom.xml" target="_blank" class="py-2 md:py-1 px-4 mx-4 inline-flex transition font-semibold rounded dark:hover:bg-gray-600 hover:bg-gray-200">
+      RSS
+    </a>
+  </nav>
+</div>
+
+    <div class="max-w-4xl w-full mx-auto ">
+      
+        <header class="flex py-16 md:py-32 mt-12 flex-col md:flex-row px-4 md:px-0 animated fadeIn">
+  <div class="flex-1 order-2 md:order-1 md:pr-16">
+    <div class="text-4xl font-bold text-center md:text-left">
+      imgradeone&#39;s blog
+    </div>
+    <div class="text-xl text-gray-500 mt-4 text-center md:text-left">
+      从简从新的“小白”选手
+    </div>
+    
+    
+      <div class="mt-8 flex items-center">
+        
+          <div class="text-gray-500 mr-2">
+            立即关注
+          </div>
+        
+        
+          
+        
+          
+            
+              <a href="mailto:imgradeone@outlook.com" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-mail-line"></i>
+              </a>
+            
+          
+        
+          
+            
+              <a href="https://github.com/imgradeone" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-github-line"></i>
+              </a>
+            
+          
+        
+          
+            
+              <a href="https://twitter.com/imgradeone" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-twitter-line"></i>
+              </a>
+            
+          
+        
+          
+            
+              <a href="https://weibo.com/imgradeone" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-weibo-line"></i>
+              </a>
+            
+          
+        
+          
+            
+              <a href="https://zhihu.com/people/imgradeone" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-zhihu-line"></i>
+              </a>
+            
+          
+        
+          
+        
+          
+            
+              <a href="https://t.me/imgradeone" target="_blank" class="mr-2 w-8 h-8 inline-flex items-center justify-center text-xl hover:bg-gray-200 dark:hover:bg-gray-600 transition-fast">
+                <i class="ri-telegram-line"></i>
+              </a>
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    
+  </div>
+  <div class="md:mx-8 flex-shrink-0 self-start rounded-full border-4 border-dotted border-transparent hover:border-yellow-50 p-2 w-32 h-32 order-1 md:order-2 mx-auto s3-dotted">
+    <img class="rounded-full object-cover" src="https://blog.imgradeone.com/images/avatar.png?v=1610884517811" alt="imgradeone&#39;s blog" width="100%" height="100%">
+  </div>
+</header>
+      
+
+      <div class="shadow-box bg-white dark:bg-gray-600 border-gray-300 rounded-none md:rounded-lg -mx-1 md:mx-0 md:px-0">
+        
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://blog.imgradeone.com/post/wei-hu-valine-ping-lun-zan-shi-ting-yong/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          维护 - Valine 评论已替换为 Waline
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-12-05</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        由于 Valine 的安全性问题和没有后端，自己的 Valine Admin 突然嗝屁，而且最近发现了 Waline 这个看上去更好的评论系统，所以 blog.imgradeone.com 的 Valine 评论已禁用。
+对于一些评论内容，...
+      </div>
+      <a href="https://blog.imgradeone.com/post/wei-hu-valine-ping-lun-zan-shi-ting-yong/" class="btn">
+        继续阅读
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://blog.imgradeone.com/post/imgradeonecom-is-here/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          imgradeone.com is here
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-11-29</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        昨天，我又整了个域名。
+现在，imgradeone.com 正式开放。接下来，.xyz 下的页面将会慢慢转移至 .com 页面。
+
+      </div>
+      <a href="https://blog.imgradeone.com/post/imgradeonecom-is-here/" class="btn">
+        继续阅读
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://blog.imgradeone.com/post/elementary-os-6/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          翻译 - 来聊聊 elementary OS 6
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-10-02</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+作者：Cassidy James Blaede，elementary 联合创始人兼 CXO
+原文：https://blog.elementary.io/updates-for-july-2020/
+发布于 2020 年 8 月 7 日
+翻...
+      </div>
+      <a href="https://blog.imgradeone.com/post/elementary-os-6/" class="btn">
+        继续阅读
+      </a>
+    </div>
+    
+      <img class="flex-shrink-0 self-start md:ml-4 mb-4 md:mb-0 rounded-sm object-cover featured-img order-1 md:order-2 w-full h-40 md:w-56 md:h-32" loading="lazy" src="https://blog.elementary.io/images/updates-for-july-2020/card.png" alt="翻译 - 来聊聊 elementary OS 6">
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://blog.imgradeone.com/post/kong-jiang-bu-ke-dai-biao-2020531-rang-hong-ling-jin-geng-jia-xian-yan-wang-shang-zhu-ti-dui-ri-hui-fang-zhi-nan/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          【空降部课代表】2020.5.31 让红领巾更加鲜艳 网上主题队日 回放指南
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-06-25</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+正片节目单参考 @全国少工委 官方微博中的图片
+点击相应节目标题即可直接跳转到 bilibili 观看，使用电脑版观看可同时调节到相应进度，部分跳转没做
+不要在这个页面评论，否则一律视为垃圾评论处理
+
+回放入口： https://www....
+      </div>
+      <a href="https://blog.imgradeone.com/post/kong-jiang-bu-ke-dai-biao-2020531-rang-hong-ling-jin-geng-jia-xian-yan-wang-shang-zhu-ti-dui-ri-hui-fang-zhi-nan/" class="btn">
+        继续阅读
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://blog.imgradeone.com/post/tlsy/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          刻入 DNA 里的听力试音
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-05-24</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        
+放了 6 遍，还不刻入 DNA？（（（
+可能与原文有出入
+如果侵权，请联系邮箱
+
+M: Hello?
+G: Hello, Dad!
+M: Oh, Susan! How is everything?
+G: Fine. I'm just ca...
+      </div>
+      <a href="https://blog.imgradeone.com/post/tlsy/" class="btn">
+        继续阅读
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://blog.imgradeone.com/post/ukylin2004walls/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          #壁纸库 - Ubuntu Kylin（优麒麟）20.04 Beta 壁纸
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-04-03</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        共含 13 张 Ubuntu Kylin 20.04 壁纸，以及部分原版 Ubuntu 20.04 壁纸
+可在 /usr/share/wallpapers/ 找到它们，亦可在下方下载。
+预览
+
+
+下载
+assets.imgradeone.x...
+      </div>
+      <a href="https://blog.imgradeone.com/post/ukylin2004walls/" class="btn">
+        继续阅读
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://blog.imgradeone.com/post/distrochooser-beta/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          帮你选择 Linux 发行版的 Distrochooser，现在更加懂你
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-04-02</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        Distrochooser 是由德国人 Christoph Müller 推出的，帮助 Linux 用户选择适合自己的 Linux 发行版的网站。而现在，更智慧、更懂你的 Distrochooser 正在进行测试。
+你可以访问 beta.d...
+      </div>
+      <a href="https://blog.imgradeone.com/post/distrochooser-beta/" class="btn">
+        继续阅读
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://blog.imgradeone.com/post/html5up-with-latest-fa/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          短教程 - 在 HTML5 UP! 的模板里使用最新的 Font Awesome 图标库
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-28</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        由于 HTML5 UP! 的模板目前统一配置的是 Font Awesome 5.9.0，而且 Font Awesome 的图标库一直在更新，因此可能导致部分图标的过时。更新一下 Font Awesome 可以让网站更好地展现各样的图标。
+下...
+      </div>
+      <a href="https://blog.imgradeone.com/post/html5up-with-latest-fa/" class="btn">
+        继续阅读
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://blog.imgradeone.com/post/cloudflarecdn-enabled/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          imgradeone.xyz 已使用 CloudFlare DNS！
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-25</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        为加快网站的加载速度（尤其是中国大陆地区），目前 imgradeone.xyz 及所有子域名均已使用 CloudFlare 提供的 DNS 服务。
+欢迎各位访问者体验更快的 imgradeone.xyz，同时也欢迎大家测试加载速度。
+
+评论...
+      </div>
+      <a href="https://blog.imgradeone.com/post/cloudflarecdn-enabled/" class="btn">
+        继续阅读
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="p-8 border-b border-gray-200 dark:border-gray-700 flex relative overflow-hidden flex-col md:flex-row animated fadeIn">
+    
+    <div class="flex-1 order-2 md:order-1">
+      <h2 class="text-2xl font-semibold mb-4">
+        <a href="https://blog.imgradeone.com/post/yi-me-de-shi-pin-ping-tai-fan-wei-kuo-da-liao/" class="text-gray-700 dark:text-gray-200 border-b-2 border-dotted border-gray-200 dark:border-gray-400 dark:hover:border-gray-200 hover:border-gray-600 transition-all duration-100">
+          一么的视频平台范围扩大了！
+        </a>
+      </h2>
+      <div class="mb-4 text-xs text-gray-500">2020-03-10</div>
+      <div class="mb-4 text-gray-500 dark:text-gray-300">
+        为了扩大影响范围，以及打击盗视频行为，从现在起，你可以在更多平台看到一年级么么哒的视频和文章了。
+
+爱奇艺：一么的音游圈
+今日头条 / 西瓜视频：一么的音游圈
+腾讯视频：很不幸，虽然我可以在腾讯视频上传视频，但是不会显示作者，只会显示“用户...
+      </div>
+      <a href="https://blog.imgradeone.com/post/yi-me-de-shi-pin-ping-tai-fan-wei-kuo-da-liao/" class="btn">
+        继续阅读
+      </a>
+    </div>
+    
+  </div>
+  
+      </div>
+
+      
+  <div class="my-4 flex justify-between px-4 md:px-0">
+    
+    
+      <a href="https://blog.imgradeone.com/page/2" class="btn btn-white">
+        下一页
+        <i class="ri-arrow-right-line ml-4"></i>
+      </a>
+    
+  </div>
+
+      <footer class="py-12 text-center px-4 md:px-0" v-pre>
+  Powered by Gridea and made with ♥ by imgradeone<br/>喜欢我的文章，也可以 <a href="/post/donate">赞助</a> 一下哦qwq
+<br/><p align="center"><a href="https://space.bilibili.com/107483999"><img src="https://img.shields.io/badge/dynamic/json?color=fa4694&label=bilibili following&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dbilibili%26queryKey%3D107483999"></img></a><a href="https://www.coolapk.com/u/1659256"><img src="https://img.shields.io/badge/dynamic/json?color=brightgreen&label=coolapk following&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dcoolapk%26queryKey%3D1659256"></img></a></p>
+</footer>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://blog.imgradeone.com/media/scripts/main.js"></script>
+</body>
+
+</html>
