@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.imgradeone.com</id>
     <title>imgradeone&apos;s blog</title>
-    <updated>2021-01-17T12:19:21.320Z</updated>
+    <updated>2021-01-17T13:32:53.652Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.imgradeone.com"/>
     <link rel="self" href="https://blog.imgradeone.com/atom.xml"/>
@@ -10,6 +10,27 @@
     <logo>https://blog.imgradeone.com/images/avatar.png</logo>
     <icon>https://blog.imgradeone.com/favicon.ico</icon>
     <rights>All rights reserved 2021, imgradeone&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[大制作 - 桂林中学 2020 校运会纪实]]></title>
+        <id>https://blog.imgradeone.com/post/glzxxyh2020/</id>
+        <link href="https://blog.imgradeone.com/post/glzxxyh2020/">
+        </link>
+        <updated>2021-01-17T13:24:16.000Z</updated>
+        <content type="html"><![CDATA[<h1 align="center">久等了。</h1>
+<figure data-type="image" tabindex="1"><img src="https://i2.hdslb.com/bfs/archive/37962cdd1a5af5da103eef13c3f0d9da7ff4bb4a.jpg" alt="" loading="lazy"></figure>
+<p><a href="https://www.bilibili.com/video/BV1254y1W7Kx" target="_blank" style="font-size: 20px;">前往观看</a></p>
+<p>剪辑 / logo 制作：@一年级么么哒-EX大咸鱼</p>
+<p>摄影：时光驿客 各社员</p>
+<h2 id="使用-bgm">使用 BGM</h2>
+<p><strong>Destr0yer</strong> by Sakuzyo feat. Nikki Simmons</p>
+<p><strong>Blank</strong> by Disfigure</p>
+<p><strong>Good Life</strong> by litmus*</p>
+<p><strong>Yotsuki</strong> by 姜米條 &amp; ElousΛ.-FZ</p>
+<p><strong>Speed Complexxx</strong> by Kobaryo feat. Srezcat</p>
+<h2 id="字体版权">字体版权</h2>
+<p>logo 使用的“五经楷书”字体由杨任东字体开发，由 @一年级么么哒-EX大咸鱼 自购授权使用。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[维护 - Valine 评论已替换为 Waline]]></title>
         <id>https://blog.imgradeone.com/post/wei-hu-valine-ping-lun-zan-shi-ting-yong/</id>
@@ -452,8 +473,8 @@ sone – some</p>
         </link>
         <updated>2020-01-17T06:04:06.000Z</updated>
         <content type="html"><![CDATA[<ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3747322"><label class="task-list-item-label" for="task-item-3747322"> 使用新版 Notes 主题</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3211925"><label class="task-list-item-label" for="task-item-3211925"> 更换相关配色</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6178711"><label class="task-list-item-label" for="task-item-6178711"> 使用新版 Notes 主题</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3990875"><label class="task-list-item-label" for="task-item-3990875"> 更换相关配色</label></li>
 </ul>
 ]]></content>
     </entry>
